@@ -52,3 +52,30 @@ p{
     width: 75%;
     margin: auto;
 }
+#oneway{
+    margin-bottom: 30px;
+}
+#oneway span{
+   margin: 40px;  
+}
+#oneway #one{
+    background-color: rgb(220, 220, 250);
+    color: rgb(104, 104, 241);
+    padding: 10px 8px;
+    border-radius: 5px;
+}
+#search_sec>input{
+padding: 15px 180px 15px 3px;
+border-radius: 10px;
+border: 1px solid gray;
+margin: 6px;
+}
+button{
+    margin: 12px;
+    background-color: rgb(68, 68, 232);
+    color: rgb(255, 255, 255);
+    padding: 13px 65px;
+    border-radius: 5px;
+border: none;
+font-size: 20px;
+}
