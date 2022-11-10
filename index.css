@@ -1,0 +1,408 @@
+body{
+    background-color:white;
+}
+
+#top-section{
+    width: 100%;
+    height: 300px;
+    border: 0px solid red;
+    position: relative; 
+    margin-bottom: 90px;
+}
+#top-div{
+    position: absolute;
+    width: 80%;
+    height: 250px;
+    border: 1.5px solid #d3d2d2;
+    top: 10%;
+    left: 10%;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 15px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+#nav{
+    display: flex;
+    margin: auto;
+    width: 60%;
+    border: 0px solid red;
+    height: auto;
+    justify-content: center;
+
+}
+#nav>div{
+    width: 80px;
+    margin-top: 20px;
+    padding: 5px;
+    color: #343d57;
+    font-weight: 500;
+    font-size: 15px;
+    border: 0px solid red;
+    text-align: center; 
+    font-size: 15px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ 
+}
+#nav>div:nth-child(1){
+    color: #3662D8;
+    font-size: 15px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+}
+#nav>div:nth-child(5){
+    width: 90px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+}
+#nav>div:hover{
+    border-bottom: 3px solid #3f76ba;
+    cursor: pointer;
+}
+
+#form{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+form>input:nth-child(1){
+    width: 450px;
+    padding: 11px;
+    margin-left: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    border:1px solid #82838b;
+}
+form>input:nth-child(2){
+    width: 150px;
+    margin-left: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid grey;
+}
+form>input:nth-child(3){
+    width: 150px;
+    margin-left: -20px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 0.5px solid grey;
+}
+form>input:nth-child(4){
+    width: 250px;
+    margin-left: -70px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #82838b;
+}
+
+#btn{
+    margin-top: 30px;
+    margin-left: 100%;
+    width: 35%;
+    padding: 10px;
+    background-color: #1d67c1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#btn:hover{
+    background-color: #387ed3;
+    cursor: pointer;
+}
+hr{
+    color: 1.5px solid #d3d2d2;
+}
+/* -------------------------------------------- */
+
+#expediarewards{
+    width: 80%;
+    height: 500px;
+    border: 0px solid red;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 70px;
+}
+#sub-div{
+    width: 35%;
+    position: absolute;
+    border: 0px solid ;
+    margin-top: 120px;
+    margin-left: 40px;
+}
+#background-img{
+  width: 100%;
+  filter: grayscale(200%);
+  position: absolute;
+  border-radius:10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+#sub-div>h1{
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%);
+}
+#sub-div>p{
+    color: white;
+    font-size: 16px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.2rem;
+    margin-top: -20px;
+}
+#sub-div>button{
+    color: white;
+    background-color: #1d67c1;
+    padding: 15px 15px 15px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+/* ----------------------------middle section start here----------------------------------- */
+
+#bottom-section-2{
+    width: 80%;
+    height: 320px;
+    border: 1px solid red;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    border:0.5px solid rgb(173, 171, 171);
+    border-radius: 10px;
+    margin-bottom: 30px;
+ }
+ #bottom-section-2>div>h2{
+    margin-left: 20px;
+ }
+ #para{
+    margin-left: 20px;
+    color: grey;
+    font-size: 13px;
+ }
+ #head-1{
+   width: 95%;
+   height: 130px;
+   border: 0px solid;
+   margin-left: 20px;
+ }
+ #head-1>h1{
+    color:  #141D38;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+ }
+ #head-1>p{
+    color: black;
+    margin-top: -14px;
+    line-height: 1.2rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+ }
+ #para{
+    color: black;
+    font-size: 13px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+ }
+ #head-2{
+    margin-top: -10px;
+ }
+ #bottom-section-2>div{
+    width: 60%;
+    background-color: white;
+    border: 0px solid blue;
+ }
+ #bottom-section-2>div>img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+ }
+ #bottom-section-2>div:nth-child(1){
+    width: 30%;
+ }
+ #bottom-section-2>div:nth-child(2){
+    padding-bottom: 20px;
+ }
+
+  #bottom-section-2>div:nth-child(2)>div>ul{
+    width: 90%;
+    line-height: 30px;
+    color: gray;
+    border: 0px solid black;
+  }
+  .country-code{
+    width: 180px;
+    height: 45px;
+    margin: auto;
+    margin-left: 14px;
+    border-radius: 5px;
+    border:0.5px solid rgb(173, 171, 171);
+  }
+  #bottom-section-2>div:nth-child(2)>div>button{
+    background-color: #1d67c1;
+    color: white;
+    font-size: 15px;
+    border: none;
+  }
+  #bottom-section-2>div:nth-child(2)>div>button:hover{
+    background-color: #387ed3;
+  }
+  #bottom-section-2>div:nth-child(3)>img{
+    width: 70%;
+    height: 60%;
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+  #bottom-section-2>div:nth-child(3){
+    width: 25%;
+  }
+  #bottom-section-2>div:nth-child(3)>p{
+    text-align: center;
+    font-weight:bold;
+    margin-top: 0px;
+  }
+/* --------------------------middle section end here-------------------------- */
+#suggestions{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 0px solid blue;
+    position: relative;
+}
+#suggestions>h1{
+    color: #343d57;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin-left: 10px;
+}
+#suggestions>h3{
+    color: #343d57;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin-left: 10px;
+}
+#suggestions>p{
+    color: rgb(79, 78, 78);
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin-left: 10px;
+    margin-top: -20px;
+
+}
+#main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0px solid red;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow: auto;
+
+}
+.main-div{
+    min-width: 280px;
+    height: auto;
+    margin: 1px 10px;
+    cursor: pointer;
+    border: 1px solid grey;
+    overflow:hidden ;
+    border-radius: 10px 10px 10px 10px;
+}
+.img-div>img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.second-div{
+    width: 100%;
+    height: auto;
+    border: 0px solid red;
+}
+.second-div>h3{
+    margin-top: 10px;
+    color: #343d57;
+    margin-left: 10px;
+    line-height: 1.2rem;
+}
+.second-div>p{
+    color: gray;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.third-div{
+    width: 100%;
+    height: auto;
+    height: auto;
+    border: 0px solid;
+}
+.third-div>h2{
+    text-align: right;
+    color: #343d57;
+    margin-right: 10px;
+}
+.third-div>p{
+    text-align: right;
+    margin-top: -18px;
+    margin-right: 10px;
+}
+/* ------------------------------------/////////////////////-------------------------- */
+
+#ad{
+    width: 80%;
+    border: 1px solid grey;
+    margin: auto;
+    display: flex;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+#ad-img{
+    width: 55%;
+    height: 200px;
+    border: 0px solid;
+}
+#ad-img>img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 0px 0px 10px;
+}
+#ad-des>img{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#ad-des>h2{
+    color: #343d57;
+    margin-left: 10px;
+    margin-top: -2px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+#ad-des>p{
+    color: rgb(80, 79, 79);
+    margin-top: -12px;
+    margin-left: 10px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+}
+/* ------------------------------------------//////////////////////----------------------------- */
+
+#second-ad{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    border: 0px solid;
+    margin-bottom: 30px
+}
+#second-ad>div>img{
+    width: 100%;
+    margin-left: 20px;
+    border: 0px solid red;
+
+}

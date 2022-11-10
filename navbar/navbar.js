@@ -2,7 +2,7 @@
 function navbar () {
    return `
    <div id="left-section">
-   <div><a href="./index.html"> <img src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2" alt=""></a></div>
+   <div><a href="./index.html"> <img src="" alt=""></a></div>
    <div class="dropdown"><button class="dropbtn" onclick="myFunction()">More Travel<i class="fa-solid fa-chevron-down"></i></button>
        <div class="dropdown-content"  id="myDropdown">
             <a href=""><i class="fa-solid fa-building"></i>Stays</a>
