@@ -38,9 +38,14 @@ body{
 }
 .white{
     height: 90px;
+    border: 1px solid white;
 }
 #right1 img{
     width: 800px;
+}
+.white:hover{
+border: 1px solid black;
+
 }
 /* #white1{
     background-color: white;
@@ -87,3 +92,61 @@ p{
   .topgap{
         padding-top: 20px;
     }
+
+.sidebar{
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-color: aliceblue;
+/* overflow-x: hidden; */
+transition: 0.5s;
+padding-top: 40px;
+}
+
+.money:hover{
+    padding: 1px;
+    border-radius: 5px;
+    background-color: rgb(193, 193, 238);
+    transition: 0.1s;
+}
+
+ #closebtn {
+    background-color: rgb(121, 121, 208);
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 16px;
+    margin: 5px;
+    padding: 7px;
+  }
+
+  #closebtn:hover{
+    color: white;
+    background-color: rgb(108, 108, 182);
+  }  
+  #white2{
+    display: flex;
+    background-color: white;
+  }
+.blue{
+    color: blue;
+}
+/* #blue{
+    margin: 10px;
+    background-color: rgb(68, 68, 232);
+    color: rgb(175, 41, 41);
+    padding: 3px 5px;
+    border-radius: 5px;
+border: none;
+font-size: 16px;
+} */
+#white3{
+   
+    padding: 20px;
+}
+#hurray{
+    background-color: rgb(169, 199, 224);
+}

@@ -5,7 +5,6 @@ let leaving = JSON.parse(localStorage.getItem("leave"));
 let arriving = JSON.parse(localStorage.getItem("arrive"));
 let dating = JSON.parse(localStorage.getItem("date"));
 
-
 document.getElementById("leavefrom").value = leaving; 
 document.getElementById("goingto").value = arriving;
 document.getElementById("dateq").value = dating;
@@ -22,4 +21,24 @@ document.getElementById("dateq").value = dating;
 // document.getElementsByClassName("change2").innerText = arriving;
 
 
+document.querySelectorAll(".money").forEach((el)=>{addEventListener("click",openNav)});
 
+document.querySelector("#closebtn").addEventListener("click",function() {
+   document.querySelector(".sidebar").style.width = "0px";
+   document.getElementById("sidehead").innerHTML= leaving+" to "+ arriving;
+  //console.log("blue")
+})
+
+function openNav() {
+ 
+   document.querySelector(".sidebar").style.width = "450px";
+   document.getElementById("sidehead").innerHTML= leaving+" to "+ arriving;
+
+   document.querySelector("#closebtn").addEventListener("click",function() {
+      document.querySelector(".sidebar").style.width = "0px";
+      document.getElementById("sidehead").innerHTML= leaving+" to "+ arriving;
+    // console.log("blue")
+   })
+ }
+ 
+ 
