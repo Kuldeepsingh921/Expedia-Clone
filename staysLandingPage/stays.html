@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stays</title>
+    <script src="https://kit.fontawesome.com/2515506460.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./stays.css">
+</head>
+<body>
+    <div id="container">
+        <div id="features">
+            <div>
+                <h3>Filter by</h3>
+                <h4>Popular filters</h4>
+                <div class="popular_filters">
+                <div><input type="checkbox"></div>
+                <div><p>London (LHR-Heathrow)</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Breakfast included</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Free cancellation</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Spa</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Parking</p></div>
+                </div>
+            </div>
+            <div>
+                <h4>Sort by price</h4>
+                <div class="popular_filters">
+                <div><button id="HTL">Pricing:HTL</button></div>
+                <div><button id="LTH">Pricing:LTH</button></div>
+                </div>
+            </div>
+            <div>
+                <h4>Price per night</h4>
+                <div class="popular_filters">
+                <div><input type="checkbox"></div>
+                <div><p>Less than ₹2,000</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>₹2,000 to ₹4,000</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input id="btw4To8" type="checkbox"></div>
+                    <div><p>₹4,000 to ₹8,000</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input id="btw8To11" type="checkbox"></div>
+                    <div><p>₹8,000 to ₹11,000</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input id="greaterThan11" type="checkbox"></div>
+                    <div><p>Greater than ₹11,000</p></div>
+            </div>
+
+            <div>
+                <h4>Guest rating</h4>
+                <div class="popular_filters">
+                <div><input type="radio"></div>
+                <div><p>Any</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="radio"></div>
+                    <div><p>Wonderful 4.5+</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="radio"></div>
+                    <div><p>Very good 4+</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="radio"></div>
+                    <div><p>Very good 4+</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h4>Property class</h4>
+                <div class="ratings">
+                <div style="color: black;">1 <i class="fa-solid fa-star"></i></div>
+        
+                <div style="color: black;">2 <i class="fa-solid fa-star"></i></div>
+                
+                <div style="color: black;">3 <i class="fa-solid fa-star"></i></div>
+               
+                <div style="color: black;">4 <i class="fa-solid fa-star"></i></div>
+               
+                <div style="color: black;">5 <i class="fa-solid fa-star"></i></div>
+                </div>
+            </div>
+
+            <div>
+                <h4>Payment type</h4>
+                <div class="popular_filters">
+                <div><input type="checkbox"></div>
+                <div><p>Fully refundable</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Reserve now, pay later</p></div>
+                </div>
+
+                <div>
+                    <h4>Property type</h4>
+                <div class="popular_filters">
+                <div><input type="checkbox"></div>
+                <div><p>Hotel</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Apartment</p></div>
+                </div>
+                <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Apart-hotel</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>Tree house</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>Hotel resort</p></div>
+                    </div>
+                    <p id="see">see more</p>
+                
+                    <h4>Area</h4>
+                    <div class="popular_filters">
+                    <div><input type="radio"></div>
+                    <div><p>London (and vicinity)</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="radio"></div>
+                        <div><p>London (LHR-Heathrow)</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="radio"></div>
+                        <div><p>London Paddington Station</p></div>
+                    </div>
+                    <p id="see">see more</p>
+
+                    <h4>Popular locations</h4>
+                    <div class="popular_filters">
+                    <div><input type="radio"></div>
+                    <div><p>Hyde Park</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="radio"></div>
+                        <div><p>Buckingham Palace</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="radio"></div>
+                        <div><p>Big Ben</p></div>
+                    </div>
+                    <p id="see">see more</p>
+
+                    <h4>Meal plans available</h4>
+                    <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Breakfast included</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>Lunch included</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>Dinner included</p></div>
+                    </div>
+                    <p id="see">see more</p>
+
+                    <h4>Amenities</h4>
+                    <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Spa</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>Parking</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>Free airport shuttle</p></div>
+                    </div>
+                    <p id="see">see more</p>
+
+                    <h4>Accesibility</h4>
+                    <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>Sign language-capable staff</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>Lift</p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>In-room accessibility</p></div>
+                    </div>
+                    <p id="see">see more</p>
+
+                    <h4>Traveller experience</h4>
+                    <div class="popular_filters">
+                    <div><input type="checkbox"></div>
+                    <div><p>LGBTQ welcoming <br> <span style="font-size: 12px;">See properties that pledge to make all guests feel safe, welcome and respected.</span></p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>Business-friendly <br> <span style="font-size: 12px;">See properties with amenities to help you work comfortably, like WiFi and breakfast.</span></p></div>
+                    </div>
+                    <div class="popular_filters">
+                        <div><input type="checkbox"></div>
+                        <div><p>Family-friendly <br> <span style="font-size: 12px;">See properties that include family essentials like in-room conveniences and activities for the kids.</span></p>
+                        </div>
+                    </div>
+                    <p id="see">see more</p>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="rooms"></div>
+        
+        <div class="banner">
+            <img src="https://s3.envato.com/files/308446031/571A6539.jpg" alt="">
+            <img src="https://st2.depositphotos.com/5261163/11762/v/950/depositphotos_117626040-stock-illustration-fast-food-doodles-vertical-banner.jpg" alt="">
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+<script src="stays.js"></script>
