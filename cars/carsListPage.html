@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpediaCarPage</title>
+    <link rel="stylesheet" href="carsListPage.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <br><br>
+    
+    <div id="heading">
+        <h4>Available cars</h4>
+        <h4>Options</h4>
+        <h4>Details</h4>
+        <h4>Conformation</h4>
+    </div>
+    <div id="frstdiv">
+        <div id="tripSummary">
+            <h4 id="TSheading">Trip Summary</h4>
+            <p><i class="fa-solid fa-map-pin"></i> Pickup</p>
+            <h4>Bangalore airport</h4>
+            <p><i class="fa-solid fa-map-pin"></i> Drop</p>
+            <h4>WhiteField, Bangalore</h4>
+            <p>Currency <b>INR</b></p>
+            
+        </div>
+        <div id="offers">
+            <p id="p1"><i class="fa-solid fa-circle-check"></i>  Flexible cancellation with every booking.</p>
+            <p id="p2"><i class="fa-sharp fa-solid fa-tags"></i> Prices are rising, book now to lock in the price.</p>
+            <div id="cards">
+                <div class="carImg">
+                    <h5>Economy</h5>
+                    <p><i class="fa-solid fa-user"></i> 5  <s> </s> <i class="fa-sharp fa-solid fa-suitcase-rolling"></i> 2</p>
+                    <img class="img" src="https://ctimg-fleet.cartrawler.com/peugeot/5008/primary.png?w=225&auto=compress" alt="">
+                    <p>From Rs. 5255.43</p>
+                </div>
+
+                <div class="carImg">
+                    <h5>Compact</h5>
+                    <p><i class="fa-solid fa-user"></i> 5  <s> </s> <i class="fa-sharp fa-solid fa-suitcase-rolling"></i> 3</p>
+                    <img class="img" src="https://ctimg-fleet.cartrawler.com/generic/economy/primary.png?w=168.75&auto=compress" alt="">
+                    <p>From Rs. 6887.23</p>
+                </div>
+
+                <div class="carImg">
+                    <h5>SUV</h5>
+                    <p><i class="fa-solid fa-user"></i> 5  <s> </s> <i class="fa-sharp fa-solid fa-suitcase-rolling"></i> 5</p>
+                    <img class="img" src="https://ctimg-fleet.cartrawler.com/generic/suv/primary.png?w=168.75&auto=compress" alt="">
+                    <p>From Rs. 7340.50</p>
+                </div>
+
+                <div class="carImg">
+                    <h5>Standard</h5>
+                    <p><i class="fa-solid fa-user"></i> 5  <s> </s> <i class="fa-sharp fa-solid fa-suitcase-rolling"></i> 5</p>
+                    <img class="img" src="https://ctimg-fleet.cartrawler.com/hyundai/sonata/primary.png?w=168.75&auto=compress" alt="">
+                    <p>From Rs. 28191.27</p>
+                </div>
+
+                <div class="carImg">
+                    <h5>Intermediate</h5>
+                    <p><i class="fa-solid fa-user"></i> 5  <s> </s> <i class="fa-sharp fa-solid fa-suitcase-rolling"></i> 4</p>
+                    <img class="img" src="https://ctimg-fleet.cartrawler.com/skoda/octavia/primary.png?w=168.75&auto=compress" alt="">
+                    <p>From Rs. 19125.69</p>
+                </div>
+
+                <div class="carImg">
+                    <h5>7 Seater Mini Van</h5>
+                    <p><i class="fa-solid fa-user"></i> 7  <s> </s> <i class="fa-sharp fa-solid fa-suitcase-rolling"></i> 6</p>
+                    <img class="img" src="https://ctimg-fleet.cartrawler.com/toyota/innova/primary.png?w=168.75&auto=compress" alt="">
+                    <p>From Rs. 8700.30 </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <p id="available"><b>10 cars </b>Available</p>
+    <p id="sort"><b>Sort By:</b></p>
+    <div id="sortdiv">
+        <button class="sortbtn">Recommended</button>
+        <button class="sortbtn">Low to High Price</button>
+        <button class="sortbtn">Rating</button>
+    </div>
+    <div id="filter">
+        <h3>Filter</h3>
+        <p><b><i class="fa-solid fa-tags"></i> price range</b></p>
+        <p>The average car price is ₨ 11 (per rental)</p>
+        <div class="slider">
+            <input type="range" min="5255" max="10000" value="100" oninput="rangeValue.innerText = this.value">
+            <p id="rangeValue">Rs5,255 <i class="fa-solid fa-arrows-left-right"></i> Rs10,000</p>
+        </div>
+        <P><B> <i class="fa-solid fa-car"></i> Transmission</B></P>
+        <input class="slider" type="checkbox" >
+        <label for="">Automatic</label>
+        <br>
+        <input class="slider" type="checkbox">
+        <label for="">Manual</label>
+        <P><B> <i class="fa-solid fa-wrench"></i> Car Specification</B></P>
+        <input class="slider" type="checkbox" >
+        <label for="">Air conditioning</label>
+        <br>
+        <input class="slider" type="checkbox">
+        <label for="">Petrol</label>
+    </div>
+    
+    <div id="main">
+        
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>Economy</h2>
+                <p>Tata Indica/Similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/generic/economy/primary.png?w=225&auto=compress" alt="">
+                <h2><i class="fa-solid fa-user"></i> 5 | <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  2 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p><i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p><i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 5,255.43</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+        <!-- second -->
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>Compact</h2>
+                <p>Chevrolet Optraor similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/peugeot/5008/primary.png?w=225&auto=compress" alt="">
+                <h2> <i class="fa-solid fa-user"></i> 5 | <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  3 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p> <i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p> <i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 6,887.23</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+        <!-- third -->
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>Compact</h2>
+                <p>Hyundai Accentor similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/generic/economy/primary.png?w=225&auto=compress" alt="">
+                <h2> <i class="fa-solid fa-user"></i> 5 | <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  3 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p> <i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p> <i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 7,340.23</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+        <!-- fourth -->
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>SUV</h2>
+                <p>Chevrolet Trailblazeror similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/generic/suv/primary.png?w=225&auto=compress" alt="">
+                <h2> <i class="fa-solid fa-user"></i> 5 | <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  5 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p> <i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p> <i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 8,340.23</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+
+        <!-- fifth -->
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>7-seat minivan</h2>
+                <p>Innova or similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/toyota/innova/primary.png?w=225&auto=compress" alt="">
+                <h2> <i class="fa-solid fa-user"></i>  7| <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  5 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p> <i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p> <i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 9,887.23</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+        <!-- sixth -->
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>Standard</h2>
+                <p>Chevrolet Optraor similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/generic/economy/primary.png?w=225&auto=compress" alt="">
+                <h2> <i class="fa-solid fa-user"></i> 5 | <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  3 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p> <i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p> <i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 6,887.23</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+        <!-- seventh -->
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>Sedan</h2>
+                <p>Chevrolet Optraor similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/generic/economy/primary.png?w=225&auto=compress" alt="">
+                <h2> <i class="fa-solid fa-user"></i> 5 | <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  3 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p> <i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p> <i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 6,887.23</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+
+        <!-- eighth -->
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>Compact</h2>
+                <p>Chevrolet Optraor similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/generic/economy/primary.png?w=225&auto=compress" alt="">
+                <h2> <i class="fa-solid fa-user"></i> 5 | <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  3 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p> <i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p> <i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 6,887.23</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+        <!-- ninth -->
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>Compact</h2>
+                <p>Chevrolet Optraor similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/generic/economy/primary.png?w=225&auto=compress" alt="">
+                <h2> <i class="fa-solid fa-user"></i> 5 | <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  3 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p> <i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p> <i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 6,887.23</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+        <!-- tenth -->
+        <div id="carDetailsContainer">
+            <div id="first">
+                <h2>Compact</h2>
+                <p>Chevrolet Optraor similar</p>
+                <img src="https://ctimg-fleet.cartrawler.com/generic/economy/primary.png?w=225&auto=compress" alt="">
+                <h2> <i class="fa-solid fa-user"></i> 5 | <i class="fa-sharp fa-solid fa-suitcase-rolling"></i>  3 | <i class="fa-solid fa-gas-pump"></i> D</h2>
+                <p> <i class="fa-solid fa-check"></i> Manual transmission</p>
+                <p> <i class="fa-solid fa-check"></i> Air conditioning</p>
+            </div>
+            <div id="second">
+                <p><i class="fa-solid fa-paper-plane"></i> Pick Up Location:</p>
+                <p class="bold"><b>Meet & Greet</b></p>
+                <p><i class="fa-solid fa-gas-pump"></i> Fuel Policy</p>
+                <p class="bold"><b>Full to Full</b></p>
+                <p><i class="fa-solid fa-gauge-simple-high"></i> Mileage</p>
+                <p class="bold"><b>Unlimited</b></p>
+            </div>
+            <div id="third">
+                <p><b>Included for Free</b></p>
+                <p><i class="fa-solid fa-check"></i> Colliosion damage wavier</p>
+                <p><i class="fa-solid fa-check"></i> Theft protection</p>
+                <p><i class="fa-solid fa-check"></i> Third party protection</p>
+                <p><i class="fa-solid fa-check"></i> Cancellation</p>
+                <p><i class="fa-solid fa-check"></i> Amendments</p>
+            </div>
+            <div id="fourth">
+                <h1>Rs 6,887.23</h1>
+                <button onclick="booking()" id="booking"><b>Book This Car</b></button>
+                <p class="quote"><i class="fa-solid fa-envelope"></i> Send me quote</p>
+            </div>
+        </div>
+    </div>  
+    <!-- <div class="container">
+        <button type="submit" class="BTN">submit</button> -->
+        <div class="popup" id="popUP">
+            <img src="tick.png" alt="">
+            <h2>Booking Confirm</h2>
+            <p>Thank you for confirming your booking further details will be shared...!</p>
+            <button type="button" onclick="CLOSE()">OK</button>
+        </div>
+    <!-- </div> -->
+
+    
+</body>
+</html>
+<script src="carsListPage.js"></script>

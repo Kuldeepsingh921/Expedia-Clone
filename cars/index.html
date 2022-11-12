@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpediaCarPage</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="SearchDiv">
+        <!-- Header -->
+        <div id="header">
+            <a href="#"><p>Stays</p></a>
+            <a href="#"><p>Flights</p></a>
+            <a href="#"><p>Cars</p></a>
+            <a href="#"><p>Packages</p></a>
+            <a href="#"><p>Things to do</p></a>
+        </div>
+        <!-- 2nd Header -->
+        <div id="header2">
+            <a href="#"><p id="car">Car Hire</p></a>
+            <a href="#"><p id="Air">Airport Transportation</p></a>
+        </div>
+        <!-- inputLine1 -->
+        <div id="inputLine1">
+            <input type="text" placeholder="PICKUP" id="pickup">
+            <input type="text" placeholder="DROP" id="drop">
+        </div>
+        <br><br>
+        <!-- inputLine2 -->
+        <div id="inputLine2">
+            <input type="date" placeholder="pickup Date" id="Pdate">
+            <input type="date" placeholder="Drop Date" id="Ddate">
+            <input type="time" placeholder="pickup Time" id="Ptime">
+            <input type="time" placeholder="Drop Time" id="Dtime">
+        </div>
+        <br><br>
+        <button id="Searchbtn" onclick="carSearch()">Search</button>
+    </div>
+    
+    <!-- imagediv -->
+    <div id="imagediv1">
+        <h1>Save instantly with<br> Expedia Rewards</h1>
+        <p>You can enjoy access to perks like Member Prices,<br> saving an average of 15% on thousands of hotels.<br> Terms may apply.
+        </p>
+        <button>See Member Prices</button>
+    </div>
+    <br><br>
+    <div id="imagediv2">
+        <p>Plan ahead and Save <br> Book 60 days in advance and save 20%</p>
+    </div>
+</body>
+</html>
+
+<script src="index.js"></script>
