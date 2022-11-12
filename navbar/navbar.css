@@ -5,8 +5,10 @@
     /* border: 1px solid red; */
     background-color:white;
     color:#354562;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     font-weight: 500;
+    margin-top: -18px;
+    border-bottom: 0.5px solid grey;
 
 }
 
@@ -19,8 +21,8 @@
      border: 0px solid blue;
      font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-#left-section>img{
-    width: 30%;   
+#left-section>div>a>img{
+    width: 80%;   
 }
 #left-section>div{
     width: 50%; 
@@ -220,16 +222,17 @@
     color: #1d253f;
     padding-left: 20px;
   }
-  .sign_dropdown-content>button{
+  .sign_dropdown-content>a>button{
      width: 93%;
-     padding: 10px;
+     padding: 10px ;
      border-radius: 10px;
      border: none;
      background-color: #4075dc;
      color: white;
+     text-decoration: none;
      font-size: 16px;
   }
-  .sign_dropdown-content>button:hover{
+  .sign_dropdown-content>a>button:hover{
     background-color: #2f55a0;
   }
   .sign_dropdown-content>h2:nth-child(4){
