@@ -156,7 +156,9 @@ h4{
     justify-content: space-between;
     color: black;
 }
-
+#sortingPrice{
+    display: flex;
+}
 .banner{
     border: 0px solid green;
     height: 400px;
@@ -168,3 +170,26 @@ h4{
     width: 100%;
     margin-top: 50px;
 }
+
+/* medium screen */
+@media (min-width: 351px) and (max-width: 600px) {
+    .hotels{
+        flex-direction: column;
+    }
+    .image{
+
+        width: 100%;
+    }
+    .details{
+        width: 100%;
+        text-align: start;
+        border: 0px solid grey;
+    }
+    .ratings{
+        flex-direction: column;
+    }
+    #sortingPrice{
+        flex-direction: column;
+        gap: 5px;
+    }
+  }
