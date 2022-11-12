@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e9bb69dc7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+        <!-- navbar part starts from here-->
+
+        <div id="navbar"></div>
+</body>
+</html>
+
+
+<script  type="module">
+    import navbar from "./navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar();   
+</script>
+
+<script>   
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+    myDropdown.classList.remove('show');
+    }
+    }
+    }
+    
+    function signinFunction(){
+    document.getElementById("myDropdown_sign").classList.toggle("show");
+    }
+    
+    window.onclick = function(e) {
+    if (!e.target.matches('.sign_dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown_sign");
+    if (myDropdown.classList.contains('show')) {
+    myDropdown.classList.remove('show');
+    }
+    }
+    }
+</script>
+
+

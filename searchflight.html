@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="searchflight.css">
+    <script src="https://kit.fontawesome.com/e9bb69dc7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./navbar/navbar.css">
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="main_flight">
+        <div id="searchwidth">
+        <h1>Search flights</h1>
+        <br>
+        <div id="oneway" > <span id="one">One-way</span><span>Return</span> <span>Multi-way</span></div>
+        <div id="search_sec">
+<input id="leave1" type="text" placeholder=" Leaving from"> 
+<input id="arrive1" type="text" placeholder="Going to" name="" id="">
+<input type="date" id="date1"  name="Departing" id="">
+        </div>
+         <button id="btn">Search</button>
+    </div>
+        <div id="layout">
+            <div id="left">
+                <div style="background-image: url('https://tpc.googlesyndication.com/simgad/8965138777747150339?'); width:680px;height:210px; background-position:center;">&nbsp;</div>
+                <h3>Flexible hotel deals</h3>
+                <p>Here's a great selection of hotels offering free cancellation if your plans change. Because
+                    flexibility matters.</p>
+            </div>
+            <div id="right">
+                <div id="right1">
+                    <img src="https://tpc.googlesyndication.com/simgad/17644702400499192002?" alt="">
+                    <div>
+                        <h3>Find your next getaway</h3>
+                        <p>Last minute deals are available</p>
+                    </div>
+                </div>
+                <div id="right2">
+                    <img src="https://tpc.googlesyndication.com/simgad/3808556016966627594?" alt="">
+                    <div>
+                        <h3>Find the perfect holiday to look forward to</h3>
+                        <p>Save today on a trip for tomorrow</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="big">
+        <div id="big1" style="background-image: url('https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg');  background-position:center;">&nbsp;</div>
+        <div id="big2" style="background-image: url('https://tpc.googlesyndication.com/simgad/9694300187526983539?'); width:460px;height:250px; background-position:center;">&nbsp;</div>
+        
+    </div>
+    </div>
+
+
+    <div id="footer">
+
+    </div>
+</body>
+
+</html>
+<script src="searchflight.js"></script>
+
+
+
+<script  type="module">
+    import navbar from "./navbar/navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar(); 
+    
+    import {footer} from "./footer/footer.js"
+    document.querySelector("#footer").innerHTML=footer();
+
+  
+
+</script>
+<script>   
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+        }
+        }
+        
+        function signinFunction(){
+        document.getElementById("myDropdown_sign").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+        if (!e.target.matches('.sign_dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown_sign");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+        }
+        }
+    </script>
