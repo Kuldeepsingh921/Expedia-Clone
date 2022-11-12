@@ -22,15 +22,60 @@
    
 }
 button{
-    padding: 5px 25px;
+    
+        display: inline-block;
+        padding: 0.65em 1.6em;
+        border: 1px solid #535050;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color:black;
+        text-align: center;
+        transition: all 0.2s;
+        animation: bn13bouncy 5s infinite linear;
+        position: relative;
+      }
+      
+      button:hover {
+        background-color: rgb(146, 140, 140);
+        color: #000000;
+      }
+      
+      @keyframes buttonbouncy {
+        0% {
+          top: 0em;
+        }
+        40% {
+          top: 0em;
+        }
+        43% {
+          top: -0.9em;
+        }
+        46% {
+          top: 0em;
+        }
+        48% {
+          top: -0.4em;
+        }
+        50% {
+          top: 0em;
+        }
+        100% {
+          top: 0em;
+        }
+      }
  
-}
+
 #faq{
     border:white solid 1px;
     margin-left: 5%;
      margin-right:5%;
      display: flex;
      margin-top: 2%;
+     
 }
 
 #search{
@@ -144,11 +189,12 @@ button{
 
     }
     #send{
-        background-color: yellow;
+        background-color: rgb(243, 188, 8);
         color: black;
-        padding: 15px 20px;
+        padding: 12px 20px;
         border: none;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+        font-size: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     
     }
 #icon{
@@ -160,10 +206,11 @@ button{
 #icon1{
     border: pink solid px;
     display: flex;
+    
 }
 #icon1 img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 #icon2{
@@ -171,16 +218,16 @@ button{
     display: flex;
 }
 #icon2 img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 #icon3{
     border: pink solid px;
     display: flex;
 }
 #icon3 img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 p{
     margin-top: 3%;
@@ -260,7 +307,8 @@ color: #98c23d;
   width:100%;
   cursor: pointer;
 
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  background-color: #f2f2f2;
 }
 
 .answers {
@@ -307,6 +355,7 @@ color: #98c23d;
   -moz-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
+  display: none;
 }
 
 .questions:checked ~ .plus {
@@ -377,13 +426,14 @@ p{
 .popup{
     
     width: 100%;
-    margin-top: 2%;
+    
+    margin-top: 9%;
     position: absolute;
     top: 0;
     display: none;
     justify-content: center;
     align-items: center;
-
+    
 }
 .popup-content{
     height: 250%;
@@ -391,13 +441,16 @@ p{
     background: white;
     padding: 20px;
     border-radius: 5px;
-    border: black solid 2px;
+    border: rgb(247, 242, 242) solid 0.5px;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    color: black;
+
 }
 
 .boxinput{
     width: 100%;
-    box-shadow: rgba(204, 206, 207, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border: rgb(184, 178, 178) solid 0.5px;
 }
 .inputopt{
     display: flex;
@@ -413,4 +466,10 @@ p{
     border-radius: 50px;
     cursor: pointer;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#crestTitle{
+    background-color: rgb(201, 233, 215);
+    color:rgb(55, 114, 55);
+    font-size: 15px;
 }
