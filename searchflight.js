@@ -1,6 +1,4 @@
 
-
-
 const searching=()=>{
     let leave=document.getElementById("leave1").value;
     let arrive=document.getElementById("arrive1").value;
@@ -11,6 +9,7 @@ localStorage.setItem("date",JSON.stringify(date));
 
 window.location.href="flight2.html";
 }
+
 document.getElementById("btn").addEventListener("click",searching)
 
 // if(leave && arrive && date){
