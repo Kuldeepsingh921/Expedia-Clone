@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32">
-    <link rel="stylesheet" href="support.css">
+    <link rel="stylesheet" href="./support.css">
+    <link rel="stylesheet" href="./navbar/navbar.css">
+    <script src="https://kit.fontawesome.com/e9bb69dc7f.js" crossorigin="anonymous"></script>
+
     
     
     <title logo>support</title>
 </head>
 <body>
+
+   <div id="navbar"></div>
     <div id="topcont">
         
         <h1 id="head">Customer Service</h1>
@@ -247,15 +252,15 @@
         </div>
     
     <div id="buttonn">
-        <button id="add_property">Add your property to goexo</button>
+        <button id="add_property">Add your property to Expedia</button>
     </div>
 
     <div id="download_app">
 
         <div id="informetion">
             <div id="titel">
-                <img style="width: 200px;" src="https://raw.githubusercontent.com/Kuldeepsingh921/judicious-rice-4024/master/images/image1.jpg" alt="">
-                <h1 style="color: black;font-size: 30px;">Downlod the GOEXO app</h1>
+                <img style="width: 130px;margin:20px" src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="">
+                <h1 style="color: black;font-size: 30px;">Downlod the Expedia app</h1>
             </div>
             <div id="mobnum">
                 <input id="input" type="" placeholder="Enter your phone number">
@@ -358,7 +363,7 @@
 
        
     </h3>
-    <p>
+    <p class="partner">
     
 Expedia Partner Central Add a property Expedia Partner Solutions API Add an Activity Travel Agencies Become an Affiliate
     
@@ -403,7 +408,7 @@ Expedia Partner Central Add a property Expedia Partner Solutions API Add an Acti
     
            
         </h3>
-        <p>
+        <p class="partner">
         
    
 Expedia Partner Solutions (EPS) Egencia Business Travel Visa Assistance Trivago HomeAway Vrbo Trover
@@ -446,4 +451,39 @@ Expedia Partner Solutions (EPS) Egencia Business Travel Visa Assistance Trivago 
 </div>
 </body>
 </html>
-<script src="support.js"></script>
+<script src="./support.js"></script>
+<script  type="module">
+  import navbar from "./navbar/navbar.js"
+  document.querySelector("#navbar").innerHTML=navbar(); 
+  
+
+
+
+</script>
+<script>   
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+      }
+      }
+      }
+      
+      function signinFunction(){
+      document.getElementById("myDropdown_sign").classList.toggle("show");
+      }
+      
+      window.onclick = function(e) {
+      if (!e.target.matches('.sign_dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown_sign");
+      if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+      }
+      }
+      }
+  </script>

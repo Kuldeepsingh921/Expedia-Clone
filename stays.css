@@ -5,6 +5,9 @@
 body{
     color: #f8f5f4 ;
 }
+#HTL{
+    margin-right: 10px;
+}
 #h6{
     color: black;
 }
@@ -170,6 +173,9 @@ h4{
     width: 100%;
     margin-top: 50px;
 }
+#footer{
+    margin-top: 30px;
+  }
 
 /* medium screen */
 @media (min-width: 351px) and (max-width: 600px) {
@@ -193,3 +199,4 @@ h4{
         gap: 5px;
     }
   }
+ 

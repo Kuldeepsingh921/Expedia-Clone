@@ -7,8 +7,12 @@
     <title>Stays</title>
     <script src="https://kit.fontawesome.com/2515506460.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./stays.css">
+    <link rel="stylesheet" href="./navbar/navbar.css">
+    <link rel="stylesheet" href="./footer/footer.css">
+
 </head>
 <body>
+    <div id="navbar"></div>
     <div id="container">
         <div id="features">
             <div>
@@ -237,9 +241,47 @@
             <img src="https://st2.depositphotos.com/5261163/11762/v/950/depositphotos_117626040-stock-illustration-fast-food-doodles-vertical-banner.jpg" alt="">
         </div>
     </div>
-    
+ 
+     <div id="footer"></div>
     
 </body>
 </html>
 
 <script src="stays.js"></script>
+<script  type="module">
+    import navbar from "./navbar/navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar(); 
+    
+    import {footer} from "./footer/footer.js"
+    document.querySelector("#footer").innerHTML=footer();
+
+  
+
+</script>
+<script>   
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+        }
+        }
+        
+        function signinFunction(){
+        document.getElementById("myDropdown_sign").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+        if (!e.target.matches('.sign_dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown_sign");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+        }
+        }
+    </script>

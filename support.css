@@ -21,27 +21,21 @@
      margin-right:5%;
    
 }
-button{
+#button{
     
-        display: inline-block;
-        padding: 0.65em 1.6em;
-        border: 1px solid #535050;
-        margin: 0 0.3em 0.3em 0;
-        border-radius: 0.12em;
-        box-sizing: border-box;
-        text-decoration: none;
-        font-family: "Roboto", sans-serif;
-        font-weight: 300;
-        color:black;
-        text-align: center;
-        transition: all 0.2s;
-        animation: bn13bouncy 5s infinite linear;
-        position: relative;
+     width: 100px;
+     height: 50px;
+     border:1px solid grey;
+     color: rgb(160, 157, 157);
+     border-radius: 4px ;
+     font-size: 15px;
+     font-weight: 500;
       }
       
       button:hover {
-        background-color: rgb(146, 140, 140);
-        color: #000000;
+        background-color: white;
+        color:gainsboro;
+
       }
       
       @keyframes buttonbouncy {
@@ -167,12 +161,13 @@ button{
     }
    
     #download_app{
+        width: 80%;
+        margin: auto;
         display: flex;
         border:blue solid 3px;
         justify-content: space-evenly;
+        border-radius: 5px;
    
-     margin-left: 5%;
-     margin-right:5%;
     }
     #titel{
         border: red px solid;
@@ -374,10 +369,11 @@ color: #98c23d;
 }
 
 #futter{
+    width: 80%;
+    border: 0px solid ;
+    margin: auto;
     border: #98c23d solid px;
-    margin-left: 5%;
-     margin-right:8%;
-     margin-top: 3%;
+    margin-top: 30px;
 }
 .futer1{
     display: flex;
@@ -394,13 +390,16 @@ color: #98c23d;
     font-size: 13px;
     text-align: left;
 }
+.partner{
+    margin-left: 45px;
+}
 #flag{
+    margin-left: 90px;
     display: grid;
     justify-content: space-around;
     gap: 20px;
     grid-template-columns: repeat(17,1fr);
     grid-template-rows: repeat(1,15px);
-    flex-wrap: ;
     margin-top: 3%;
 }
 #flag div img{

@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExpediaCarPage</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="car.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./navbar/navbar.css">
+    <link rel="stylesheet" href="./footer/footer.css">
 </head>
 <body>
+    
+
+    <div id="navbar"></div>
     <div id="SearchDiv">
         <!-- Header -->
         <div id="header">
@@ -84,7 +89,46 @@
     <div id="imagediv2">
         <p>Plan ahead and Save <br> Book 60 days in advance and save 20%</p>
     </div>
+
+    <div id="footer"></div>
 </body>
 </html>
 
-<script src="index.js"></script>
+<script src="car.js"></script>
+<script  type="module">
+    import navbar from "./navbar/navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar(); 
+    
+    import {footer} from "./footer/footer.js"
+    document.querySelector("#footer").innerHTML=footer();
+
+  
+
+</script>
+<script>   
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+        }
+        }
+        
+        function signinFunction(){
+        document.getElementById("myDropdown_sign").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+        if (!e.target.matches('.sign_dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown_sign");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+        }
+        }
+    </script>

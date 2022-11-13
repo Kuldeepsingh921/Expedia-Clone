@@ -22,7 +22,8 @@
      font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 #left-section>div>a>img{
-    width: 80%;   
+    width: 80%;
+    margin-top: 10px;   
 }
 #left-section>div{
     width: 50%; 

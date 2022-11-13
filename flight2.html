@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/e9bb69dc7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="flight2.css">
+    <link rel="stylesheet" href="./navbar/navbar.css">
+    <link rel="stylesheet" href="./footer/footer.css">
 </head>
 
 <body>
@@ -278,8 +281,46 @@
               <p>Scan the QR code</p>
         </div>
     </div>
-
+   
+      <div id="footer"></div>
 </body>
 
 </html>
 <script src="flight2.js"></script>
+<script  type="module">
+    import navbar from "./navbar/navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar(); 
+    
+    import {footer} from "./footer/footer.js"
+    document.querySelector("#footer").innerHTML=footer();
+
+  
+
+</script>
+<script>   
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+        }
+        }
+        
+        function signinFunction(){
+        document.getElementById("myDropdown_sign").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+        if (!e.target.matches('.sign_dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown_sign");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+        }
+        }
+    </script>
