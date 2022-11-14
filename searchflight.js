@@ -18,3 +18,8 @@ document.getElementById("btn").addEventListener("click",searching)
 // else{
 //     alert("Please fill all details")
 // }
+
+
+
+
+
